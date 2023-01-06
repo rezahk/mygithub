@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./github.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .fluid-container {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  /*  spacing between the form and the result*/
+    gap: 20px;
+    background: #e2e2e2;
+    margin: 0 7rem;
+    min-height: 25rem;
+    border-radius: 5px;
+    padding: 2rem;
+    opacity: 0.94;
+  }
+  
+  .search {
+    grid-column: span 2 / span 2;
+    height: 100px;
+    padding: 10px 40px;
+  }
+  
+  .search-inner-container {
+  /*  inner search container*/
+    background: white;
+    border-width: 2px;
+    border-color: grey;
+    border-radius: 10px;
+    padding: 30px 10px;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  .search-in {
+  /*  search input*/
+    width: 100%;
+  }
+  
+  .btn {
+  /*  submit button*/
+    padding: 10px 20px;
+    width: 100%;
+    margin-top: 70px;
+    background-color: grey;
+    outline: none;
+    border-radius: 15px 30px 5px 20px;
+    border: 2px dashed darkred;
+    color: white;
+    transition: all 1s;
+    cursor: pointer;
+  }
+  
+  
+  .btn:hover {
+  /*  submit button on hover*/
+    background-color: lightgoldenrodyellow;
+    color: black;
+    outline: none;
+    border-radius: 5px 20px 15px 30px;
+  }
+  
+  .avatar{
+    height: 150px;
+    width: 150px;
+  }
+  
+  
+  .result {
+  /*  results column gets 4 out of 6 grid parts*/
+    grid-column: span 4 / span 4;
+    height: 100px;
+    padding: 10px 40px;
+  }
+  
+  .result-inner {
+    background: white;
+    border-width: 2px;
+    border-color: grey;
+    border-radius: 10px;
+    padding: 30px 10px;
+  /*  column flex direction for avatar and info*/
+    display: flex;
+    flex-direction: column;
+    min-height: 8rem;
+  }
+  
+  .user-info {
+  /*  user text info column direction*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .user-information {
+    padding-right: 8%;
+  }
